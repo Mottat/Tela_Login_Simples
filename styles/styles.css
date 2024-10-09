@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+    margin: 0 auto;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+img {
+    width: 400px; 
+    height: auto;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin:  0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+#right {
+
+    max-width: 1200px;
+    align-content: center;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    /* padding-top: -15px; */
+    margin-top: -5px;
+}
+
+#mail {
+    font-family: "Rubik", sans-serif;
+    font-weight: 450;
+    font-size: 13px;
+    margin-top: 30px;
+    /* padding-left: 10px; */
+
+}
+
+form [type="email"]{
+    height: 30px;
+    width: 100%;
+    border: 5px;
+    background-color: rgba(0, 0, 255, 0.034);
+    font-size: 12px;
+}
+
+input {
+    padding-left: 10px;
+}
+
+#password {
+    font-family: "Rubik", sans-serif;
+    font-weight: 450;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+form [type="password"]{
+    height: 30px;
+    width: 100%;
+    border: 5px;
+    background-color: rgba(0, 0, 255, 0.034);   
+    font-size: 12px; 
+}
+
+#le {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 30px;
+    align-items: center;
+}
+
+
+#lb {
+    font-weight: 540;
+    font-size: 12px;
+    margin-left: -3px;
+}
+
+#esqueceu {
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(7, 184, 110);
+}
+
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo para a label */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    padding-left: 35px; /* Espaço para o círculo */
+    justify-content: space-between;
+}
+
+/* Cria o círculo personalizado */
+.checkbox-container .checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 13px;
+    width: 13px;
+    background-color: rgba(0, 0, 255, 0.034);   
+    border-radius: 50%; /* Deixa o círculo redondo */
+}
+
+/* Estilo para o estado marcado */
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+    background-color: #4CAF50; /* Cor do círculo marcado */
+}
+
+/* Cria um ícone interno no círculo quando marcado */
+.checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+/* Desenha o símbolo de "check" dentro do círculo */
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+form [type="button"]{
+    height: 35px;
+    width: 100%;
+    /* font-weight: bold; */
+}
+
+#entrar {
+    margin-top: 30px;
+    background-color: rgb(30, 158, 107);
+    color: white;
+    border: none;
+}
+
+#entrar:hover{
+    cursor: pointer;
+}
+
+
+#google {
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    background-image: url(../components/images/google.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: 30px center;    
+}
+
+#google:hover{
+    cursor: pointer;
+}
+
+#naotem {
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#Cadastre-se {
+    color: rgb(30, 158, 107);
+}
